@@ -42,7 +42,7 @@ class Geo extends Component
         if (realpath($this->config->geo->path))
             $this->path = realpath($this->config->geo->path);
         if (!file_exists($this->path)) {
-            mkpath($this->path, 0777, true);
+            mkdir($this->path, 0777, true);
             $this->path = realpath($this->config->geo->path);
         }
 
