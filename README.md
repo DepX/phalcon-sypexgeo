@@ -7,7 +7,7 @@ return new \Phalcon\Config([
     //...
     'geo' => [
         'debug' => true,
-        'path' => __DIR__ . '/../../geo-files',
+        'path' => './geo-files',
         'types' => 1 | 2 // SXGEO_MEMORY | SXGEO_BATCH
     ],
     //...
